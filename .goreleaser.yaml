@@ -31,6 +31,16 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+nfpms:
+  -
+    id: nfpms
+    file_name_template: "{{ .ConventionalFileName }}"
+    vendor: Thomas Bruno
+    homepage: "https://github.com/tebruno99/{{ .ProjectName }}"
+    maintainer: Thomas Bruno <24335+tebruno99@users.noreply.github.com>
+    formats:
+      - rpm
+      - deb
 dockers:
   - image_templates:
     - "tebruno99/httpheaderprinter:latest"
